@@ -35,3 +35,59 @@ It also includes a responsive user interface powered by **Bootstrap 5**, with dy
 ---
 
 ## 📁 Project Structure
+
+weather_app/
+├── manage.py
+├── weather/
+│ ├── init.py
+│ ├── settings.py
+│ ├── urls.py
+│ └── wsgi.py
+│
+├── main/
+│ ├── init.py
+│ ├── views.py
+│ ├── urls.py
+│ ├── utils.py
+│ ├── templates/
+│ │ └── main/
+│ │ └── index.html
+│ ├── static/
+│ │ ├── css/
+│ │ │ └── style.css
+│ └── ...
+│
+└── requirements.txt
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/yourusername/advanced-weather-app.git
+cd advanced-weather-app
+
+2️⃣ Create and activate a virtual environment
+python3 -m venv myvenv
+source myvenv/bin/activate   # On Windows: myvenv\Scripts\activate
+
+3️⃣ Install dependencies
+pip install -r requirements.txt
+
+4️⃣ Get an OpenWeatherMap API key
+
+Create a free account at https://openweathermap.org/api
+ and get your API key.
+
+Create a .env file in your project root:
+
+OPENWEATHER_API_KEY=your_api_key_here
+
+5️⃣ Run migrations
+python manage.py migrate
+
+6️⃣ Run the development server
+python manage.py runserver
+```
