@@ -81,9 +81,9 @@ pip install -r requirements.txt
 Create a free account at https://openweathermap.org/api
  and get your API key.
 
-Create a .env file in your project root:
+Create a .env file in the project root:
 
-OPENWEATHER_API_KEY=your_api_key_here
+OPENWEATHER_API_KEY=your_api_key_here in your .env file
 
 5️⃣ Run migrations
 python manage.py migrate
