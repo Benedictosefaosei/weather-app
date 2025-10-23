@@ -55,7 +55,7 @@ weather_app/
 │ ├── static/
 │ │ ├── css/
 │ │ │ └── style.css
-│ └── ...
+│ 
 │
 └── requirements.txt
 
